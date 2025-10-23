@@ -1,5 +1,5 @@
-import Tareas from "../models/Tareas"
-import { ApiError } from "../utils/ApiError"
+import Tareas from "../models/Tareas.js"
+import { ApiError } from "../utils/ApiError.js"
 
 export const createTarea = async (data : any) => {
     const exists = await Tareas.findOne({where:{titulo: data.titulo}});

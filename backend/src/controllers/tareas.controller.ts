@@ -1,5 +1,5 @@
 import type { Request, Response, NextFunction } from 'express';
-import * as service from '../services/tareas.service';
+import * as service from '../services/tareas.service.js';
 import { validationResult } from 'express-validator';
 
 export const create = async(req:Request, res:Response, next:NextFunction) => {

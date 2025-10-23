@@ -1,12 +1,12 @@
 import express from "express"
 import dotenv from "dotenv"
-import cors from "cors";
+//import cors from "cors";
 dotenv.config()
 
-import tareasRoutes from './routes/tareas.routes';
+import tareasRoutes from './routes/tareas.routes.js';
 
 const app = express()
-app.use(cors({ origin: 'http://localhost:5173' }));
+//app.use(cors({ origin: 'http://localhost:5173' }));
 app.use(express.json())
 
 app.use('/api/tasks', tareasRoutes);
